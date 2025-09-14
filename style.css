@@ -1,0 +1,45 @@
+:root {
+  --card-bg: #fff;
+  --text: #111827;
+  --muted: #6b7280;
+  --shadow: 0 10px 25px rgba(0,0,0,.08);
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  background: #f5f7fb;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  background: var(--card-bg);
+  border-radius: 16px;
+  padding: 22px 26px;
+  box-shadow: var(--shadow);
+}
+
+.avatar {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.info h2 {
+  margin: 0 0 6px;
+  font-size: 22px;
+}
+
+.info a {
+  color: var(--muted);
+  text-decoration: none;
+}
+.info a:hover {
+  text-decoration: underline;
+}
